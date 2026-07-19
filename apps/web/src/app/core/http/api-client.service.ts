@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
+import { environment } from "../../../environments/environment";
 
-const API_BASE_URL = "http://localhost:4000"; // -> environment token en sprint suivant
+const API_BASE_URL = environment.apiBaseUrl;
 
 @Injectable({ providedIn: "root" })
 export class ApiClientService {
